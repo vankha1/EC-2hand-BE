@@ -6,7 +6,7 @@ import { userMess } from '../contants';
 import { User, UserDocument } from '../schema/users.schema';
 import { TCurrentUser } from 'src/types';
 import { UpdateProfileDto } from './dto/update.dto';
-import { CloudinaryService } from 'src/cloudinary';
+import { CloudinaryService } from '../cloudinary';
 
 @Injectable()
 export class UsersService {

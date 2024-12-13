@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { RegisterDto } from 'src/auth/dto/register.dto';
 import { userMess } from 'src/contants';
-import { User, UserDocument } from 'src/schema/users.schema';
+import { User, UserDocument } from '../schema/users.schema';
 import { TCurrentUser } from 'src/types';
 import { UpdateProfileDto } from './dto/update.dto';
 import { CloudinaryService } from 'src/cloudinary';

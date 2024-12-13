@@ -1,9 +1,8 @@
-import { BadRequestException, Controller, Post, Param, Res, Body } from '@nestjs/common';
-import { PaymentService } from './payment.service';
-import { Response } from 'express';
+import { BadRequestException, Body, Controller, Param, Post } from '@nestjs/common';
 import { ApiOperation, ApiParam, ApiResponse } from '@nestjs/swagger';
-import { OrderService } from 'src/order/order.service';
-import { PaymentMethod } from 'src/schema';
+import { OrderService } from '../order/order.service';
+import { PaymentMethod } from '../schema';
+import { PaymentService } from './payment.service';
 
 @Controller('payment')
 export class PaymentController {

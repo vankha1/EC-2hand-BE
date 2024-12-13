@@ -3,7 +3,7 @@ import { PaymentService } from './payment.service';
 import { PaymentController } from './payment.controller';
 import { ConfigService } from '@nestjs/config';
 import PayOS from '@payos/node';
-import { OrderModule } from 'src/order/order.module';
+import { OrderModule } from '../order/order.module';
 
 @Module({
   controllers: [PaymentController],

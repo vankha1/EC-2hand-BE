@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { ApiProperty } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 import { Types } from 'mongoose';
-import { ProductItemDto } from 'src/common/dto/productItem.dto';
+import { ProductItemDto } from '../common/dto/productItem.dto';
 import { User } from './users.schema';
 
 export enum OrderState {

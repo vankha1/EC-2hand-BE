@@ -16,10 +16,10 @@ import {
     ApiTags,
 } from '@nestjs/swagger';
 import { CartService } from './cart.service';
-import { JwtGuard } from 'src/auth/guard';
+import { JwtGuard } from '../auth/guard';
 import { CreateCartDto } from './dto/create.dto';
-import { CurrentUser } from 'src/users/decorator';
-import { TCurrentUser } from 'src/types';
+import { CurrentUser } from '../users/decorator';
+import { TCurrentUser } from '../types';
 import { RemoveItemDto } from './dto/remove.dto';
 
 @ApiTags('carts')

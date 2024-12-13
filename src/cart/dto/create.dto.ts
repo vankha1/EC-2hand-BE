@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 import { IsArray, ValidateNested } from 'class-validator';
-import { ProductItemDto } from 'src/common/dto/productItem.dto';
+import { ProductItemDto } from '../../common/dto/productItem.dto';
 
 
 export class CreateCartDto {

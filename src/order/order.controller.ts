@@ -7,12 +7,12 @@ import {
     ApiResponse,
     ApiTags,
 } from '@nestjs/swagger';
-import { JwtGuard } from 'src/auth/guard';
-import { CurrentUser } from 'src/users/decorator';
+import { JwtGuard } from '../auth/guard';
+import { CurrentUser } from '../users/decorator';
 import { OrderDto } from './dto/order.dto';
 import { OrderService } from './order.service';
-import { TCurrentUser } from 'src/types';
-import { OrderState } from 'src/schema';
+import { TCurrentUser } from '../types';
+import { OrderState } from '../schema';
 
 @ApiTags('orders')
 @ApiBearerAuth()

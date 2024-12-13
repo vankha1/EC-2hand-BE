@@ -5,11 +5,11 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Product, ProductDocument, Review, ReviewDocument } from 'src/schema';
+import { Product, ProductDocument, Review, ReviewDocument } from '../schema';
 import { CreateReviewDto } from './dto/create.dto';
 import { productMess, reviewMess } from '../contants';
-import { ProductService } from 'src/product/product.service';
-import { unSelectedFields } from 'src/types';
+import { ProductService } from '../product/product.service';
+import { unSelectedFields } from '../types';
 import { UpdateReviewDto } from './dto/update.dto';
 
 @Injectable()

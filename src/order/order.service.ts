@@ -1,11 +1,11 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Order, OrderDocument, OrderState, PaymentMethod } from 'src/schema';
+import { Order, OrderDocument, OrderState, PaymentMethod } from '../schema';
 import { ProductService } from './../product/product.service';
 import { OrderDto } from './dto/order.dto';
-import { unSelectedFields } from 'src/types';
-import { ProductItemDto } from 'src/common/dto/productItem.dto';
+import { unSelectedFields } from '../types';
+import { ProductItemDto } from '../common/dto/productItem.dto';
 
 @Injectable()
 export class OrderService {

@@ -9,8 +9,8 @@ import {
     IsString,
     ValidateNested,
 } from 'class-validator';
-import { ProductItemDto } from 'src/common/dto/productItem.dto';
-import { OrderState, PaymentMethod } from 'src/schema';
+import { ProductItemDto } from '../../common/dto/productItem.dto';
+import { OrderState, PaymentMethod } from '../../schema';
 
 export class OrderDto {
     @ApiProperty({

@@ -6,13 +6,13 @@ import {
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
-import { UsersService } from 'src/users';
+import { UsersService } from '../users';
 import { RegisterDto } from './dto/register.dto';
-import { compareContent, hashedContent } from 'src/utils';
+import { compareContent, hashedContent } from '../utils';
 import { authMess, userMess } from '../contants';
 import { Role } from '../schema/users.schema';
 import { LoginDto } from './dto';
-import { MailService } from 'src/mailer/mailer.service';
+import { MailService } from '../mailer/mailer.service';
 
 @Injectable()
 export class AuthService {

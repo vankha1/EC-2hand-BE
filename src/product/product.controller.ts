@@ -22,11 +22,11 @@ import {
     ApiResponse,
     ApiTags,
 } from '@nestjs/swagger';
-import { JwtGuard } from 'src/auth/guard';
-import { ApiPaginatedQuery } from 'src/common/decorator/query-swagger.decorator';
-import { Product } from 'src/schema/product.schema';
-import { TCurrentUser } from 'src/types';
-import { CurrentUser } from 'src/users/decorator';
+import { JwtGuard } from '../auth/guard';
+import { ApiPaginatedQuery } from '../common/decorator/query-swagger.decorator';
+import { Product } from '../schema/product.schema';
+import { TCurrentUser } from '../types';
+import { CurrentUser } from '../users/decorator';
 import { CreateProductDto } from './dto/create.dto';
 import { ProductQuery } from './dto/query.dto';
 import { UpdateProductDto } from './dto/update.dto';

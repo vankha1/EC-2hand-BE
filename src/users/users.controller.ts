@@ -13,9 +13,9 @@ import {
 } from '@nestjs/common';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { JwtGuard } from 'src/auth/guard';
-import { ApiPaginatedQuery } from 'src/common/decorator/query-swagger.decorator';
-import { TCurrentUser } from 'src/types';
+import { JwtGuard } from '../auth/guard';
+import { ApiPaginatedQuery } from '../common/decorator/query-swagger.decorator';
+import { TCurrentUser } from '../types';
 import { CurrentUser } from './decorator';
 import { UpdateProfileDto } from './dto/update.dto';
 import { UsersService } from './users.service';

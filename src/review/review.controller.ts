@@ -1,27 +1,26 @@
 import {
-    Controller,
-    Get,
-    Post,
-    Patch,
-    Delete,
-    Param,
     Body,
+    Controller,
+    Delete,
+    Get,
+    Param,
+    Patch,
+    Post,
     UseGuards,
 } from '@nestjs/common';
 import {
-    ApiTags,
+    ApiBearerAuth,
+    ApiBody,
     ApiOperation,
     ApiParam,
-    ApiBody,
-    ApiBearerAuth,
+    ApiTags,
 } from '@nestjs/swagger';
-import { Review, Role } from 'src/schema';
-import { ReviewService } from './review.service';
+import { JwtGuard } from '../auth/guard';
+import { TCurrentUser } from '../types';
+import { CurrentUser } from '../users/decorator';
 import { CreateReviewDto } from './dto/create.dto';
-import { CurrentUser } from 'src/users/decorator';
-import { TCurrentUser } from 'src/types';
-import RoleGuard, { JwtGuard } from 'src/auth/guard';
 import { UpdateReviewDto } from './dto/update.dto';
+import { ReviewService } from './review.service';
 
 @ApiTags('Reviews')
 @Controller('reviews')

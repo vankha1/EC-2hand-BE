@@ -6,7 +6,7 @@ import {
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
 import { CloudinaryService } from 'src/cloudinary';
-import { productMess } from 'src/contants';
+import { productMess } from '../contants';
 import { Product, ProductDocument } from 'src/schema/product.schema';
 import { unSelectedFields } from 'src/types';
 import { transactionCost } from 'src/utils';

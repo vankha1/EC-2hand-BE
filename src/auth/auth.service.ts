@@ -9,7 +9,7 @@ import { JwtService } from '@nestjs/jwt';
 import { UsersService } from 'src/users';
 import { RegisterDto } from './dto/register.dto';
 import { compareContent, hashedContent } from 'src/utils';
-import { authMess, userMess } from 'src/contants';
+import { authMess, userMess } from '../contants';
 import { Role } from '../schema/users.schema';
 import { LoginDto } from './dto';
 import { MailService } from 'src/mailer/mailer.service';

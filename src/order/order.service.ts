@@ -6,6 +6,7 @@ import { ProductService } from './../product/product.service';
 import { OrderDto } from './dto/order.dto';
 import { unSelectedFields } from '../types';
 import { ProductItemDto } from '../common/dto/productItem.dto';
+import * as crypto from 'crypto';
 
 @Injectable()
 export class OrderService {
